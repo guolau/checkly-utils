@@ -1,16 +1,21 @@
 # About
 A collection of Checkly utility scripts. This repository is not officially maintained by Checkly — use at your own risk!
 
-# Usage
-Set your API key and target account key as environment variables in a `.env` file. You can copy from `.env.example` and fill in each variable.
+# Getting started
+1. Set your API key and target account ID as environment variables in a `.env` file. See `.env.example` for the required env variables.
 
+2. Install NPM packages
 
-To run a script:
 ```
-npx tsx <filename>
+npm install
 ```
 
-For example, to clean up alert channels, you can run:
+# Available scripts
+
+## Clean up alert channels
 ```
-npx tsx clean-up-alert-channels.ts
+npx tsx clean-up-alert-channels.ts <filename>
 ```
+Arguments:
+- `filename`: Basic info about each deleted alert channel will be written to this file.
+- `--dry-run`: Don't delete any alert channels. Helpful for checking to see what alert channels would be deleted, before actually deleting anything.

@@ -5,16 +5,17 @@
 import { getListFromApi, getFromApi, deleteFromApi } from './helpers'
 import jp from 'jsonpath'
 import * as fs from 'fs'
+import { argv } from 'node:process'
 
 /**
  * Some basic info about each deleted alert channel will be written to this file.
  */
-const FILENAME = 'output/deleted-alert-channels.csv' 
+const FILENAME = process.argv[2]
 
 /**
- * Set to false to delete alert channels. To only test the script and not delete anything, set to true.
+ * Use this option to test the script and not delete anything.
  */
-const isDryRun = true
+const isDryRun = process.argv[3] === '--dry-run'
 
 let total = 0
 let page = 1
