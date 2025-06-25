@@ -19,3 +19,8 @@ npx tsx clean-up-alert-channels.ts <filename>
 Arguments:
 - `filename`: Basic info about each deleted alert channel will be written to this file.
 - `--dry-run`: Don't delete any alert channels. Helpful for checking to see what alert channels would be deleted, before actually deleting anything.
+
+Example usage:
+```
+npx tsx clean-up-alert-channels.ts output/deleted-alert-channels.csv --dry-run
+```
