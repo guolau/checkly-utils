@@ -1,0 +1,29 @@
+{
+  "name": "checkly-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guolau/checkly-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guolau/checkly-utils/issues"
+  },
+  "homepage": "https://github.com/guolau/checkly-utils#readme",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.10.7",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "jsonpath": "^1.1.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "5.3.3"
+  }
+}
